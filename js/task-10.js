@@ -10,7 +10,27 @@ const refs = {
 }
 
 refs.btnCreate.addEventListener('click', onBtnCreateClick);
+refs.btnDstr.addEventListener('click', onBtnDstrClick);
+refs.inputEl.addEventListener('input', onInputChange)
 
-function onBtnCreateClick() {
+
+
+function onBtnCreateClick(event) {
+
+  const numberDiv = event.currentTarget.value;
+
+function createBoxes(amount) {
+  const divCreated = document.createElement('div');
+  amount = numberDiv;
+  refs.container.append(divCreated);
+}
+  
+}
+
+function onBtnDstrClick() {
+  
+}
+
+function onInputChange() {
   
 }
